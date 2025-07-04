@@ -18,3 +18,13 @@ A web-based application that processes YouTube videos or uploaded video files to
   * Keyword extraction using Rust NLP libraries
 
 ---
+
+### Goal
+
+- Gain proficiency in Rust
+
+- Learn and apply WebAssembly (Wasm)
+
+- Utilize TensorFlow.js for machine learning tasks
+
+- Develop AI-powered front-end applications
