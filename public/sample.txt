@@ -1,0 +1,5 @@
+In this video, we explore the fundamentals of machine learning and how they apply to real-world data.
+
+We start by discussing the difference between supervised and unsupervised learning. Then we cover common algorithms like decision trees, linear regression, and neural networks.
+
+By the end of this video, you’ll have a basic understanding of how machine learning models are trained, evaluated, and deployed.

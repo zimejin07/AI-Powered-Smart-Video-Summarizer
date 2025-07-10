@@ -1,9 +1,15 @@
-import init, { extract_keywords } from '../../wasm-build/pkg';
+import init, { summarize_text } from '../../wasm-build/pkg';
 
-export const initWasm = async () => {
-  await init();
-};
+let initialized = false;
 
-export const getKeywords = (text: string): string[] => {
-  return extract_keywords(text);
-};
+export async function initWasm() {
+  if (!initialized) {
+    await init();
+    initialized = true;
+  }
+}
+
+export async function getSummary(text: string, count = 3): Promise<string[]> {
+  await initWasm();
+  return summarize_text(text, count);
+}
