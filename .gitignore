@@ -1,4 +1,17 @@
-node_modules
-.next
-wasm-build/pkg
-dist
+# Node.js dependencies
+node_modules/
+
+# Next.js build output
+.next/
+
+# WebAssembly build output
+wasm-build/pkg/
+
+# Distribution folder
+dist/
+
+# IDE-specific files (for JetBrains IDEs)
+.idea/
+
+# Rust build artifacts
+rust/src/target/debug/

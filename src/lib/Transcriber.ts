@@ -11,10 +11,10 @@ export async function transcribeAudio(blob: Blob): Promise<string> {
   // Check if the Whisper model is already loaded and ready
   if (!whisperReady) {
     // Dynamically import the Whisper module/script
-    await import("/whisper/whisper.js");
+    await import("../../public/whisper/whisper.js");
     // Load the specific model required for transcription
     // @ts-ignore: TypeScript cannot verify 'whisper' type due to dynamic import
-    await whisper.loadModel("/whisper/whisper-tiny.en.bin");
+    await whisper.loadModel("/whisper/whisper-tiny.en");
     // Set the flag to true indicating that the model is now ready
     whisperReady = true;
   }
